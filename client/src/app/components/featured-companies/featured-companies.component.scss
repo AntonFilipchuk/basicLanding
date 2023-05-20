@@ -1,0 +1,21 @@
+.featured-companies-container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: 237, 238, 242;
+  .featured-companies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  h1 {
+    font-size: 3rem;
+    color: rgb(168, 176, 187);
+  }
+}

@@ -11,13 +11,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ParallaxComponent } from './components/parallax/parallax.component';
+import { FeaturedCompaniesComponent } from './components/featured-companies/featured-companies.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ParallaxComponent,
+    FeaturedCompaniesComponent
   ],
   imports: [
     BrowserModule,
