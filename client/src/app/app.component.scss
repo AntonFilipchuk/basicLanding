@@ -30,6 +30,8 @@
 
 .plan-info {
   display: flex;
+  flex: 1;
+  max-width: 2000px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
