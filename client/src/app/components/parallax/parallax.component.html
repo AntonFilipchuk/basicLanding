@@ -1,3 +1,22 @@
-<div class="parallax-container">
-
+<div
+  class="parallax"
+  style="display: flex; justify-content: center; align-items: center"
+>
+  <div
+    style="
+      background-color: #243b4a;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <h1
+      style="margin: 0"
+      [ngClass]="{ show: showText, 'fade-in': true }"
+      #textElement
+    >
+      {{ texts[currentIndex] }}
+    </h1>
+  </div>
 </div>

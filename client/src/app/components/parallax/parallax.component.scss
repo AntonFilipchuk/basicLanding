@@ -1,8 +1,9 @@
-.parallax-container {
-  width: 100%;
-  height: 600px;
-
+.parallax {
+  /* The image used */
   background-image: url("/assets/city.png");
+
+  /* Set a specific height */
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -11,3 +12,11 @@
   background-size: cover;
 }
 
+.show {
+  opacity: 1;
+}
+
+.fade-in {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}

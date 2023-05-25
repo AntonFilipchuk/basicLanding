@@ -1,0 +1,10 @@
+$dark-blue: #243b4a;
+$charcoal: #2d4654;
+$light-blue: #87bcde;
+$chinese-violet: #805e73;
+$davy-gray: #4e4d5c;
+
+gallery {
+  background-image: linear-gradient(to bottom, $dark-blue 20%, $light-blue);
+  padding-bottom: 0.2rem;
+}

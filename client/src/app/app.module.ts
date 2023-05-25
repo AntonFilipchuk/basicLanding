@@ -13,6 +13,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
 import { FeaturedCompaniesComponent } from './components/featured-companies/featured-companies.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { QuotesComponent } from './components/quotes/quotes.component';
+import { PlansComponent } from './components/plans/plans.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+
+import { GalleryModule } from  'ng-gallery';
 
 
 @NgModule({
@@ -21,7 +27,11 @@ import { FeaturedCompaniesComponent } from './components/featured-companies/feat
     FooterComponent,
     HeaderComponent,
     ParallaxComponent,
-    FeaturedCompaniesComponent
+    FeaturedCompaniesComponent,
+    GalleryComponent,
+    WelcomeComponent,
+    QuotesComponent,
+    PlansComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,8 @@ import { FeaturedCompaniesComponent } from './components/featured-companies/feat
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    GalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
