@@ -1,11 +1,16 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+$dark-blue : #243B4A;
+$charcoal : #2D4654;
+$light-blue : #87BCDE;
+$chinese-violet : #805E73;
+$davy-gray : #4E4D5C;
+
+
 
 body {
   margin:0;
 }
 
 h1, p {
-  font-family: 'Lato', sans-serif;
   font-weight:300;
   letter-spacing: 2px;
   font-size:48px;
@@ -15,9 +20,10 @@ h1, p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: linear-gradient(60deg, $charcoal 0%, $light-blue 100%);
   color:white;
 }
+
 .logo {
   width:50px;
   fill:white;

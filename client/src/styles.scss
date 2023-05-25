@@ -1,4 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.mat-typography h1 {
+  font-family: "chakra-petch";
+}
+
+* {
+  font-family: "chakra-petch";
+}
+
+@font-face {
+  font-family: chakra-petch;
+  src: url(assets/font/ChakraPetch-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: chakra-petch-italic;
+  src: url(assets/font/ChakraPetch-MediumItalic.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: chakra-petch-bold;
+  src: url(assets/font/ChakraPetch-Bold.ttf) format("opentype");
+}
+
+// @font-face {
+//     font-family: chakra-petch;
+//     src: url(assets/font/ChakraPetch-Medium.ttf) format("opentype");
+//     font-family: chakra-petch-italic;
+//     src: url(assets/font/ChakraPetch-MediumItalic.ttf) format("opentype");
+//     font-family: chakra-petch-bold;
+//     src: url(assets/font/ChakraPetch-Bold.ttf) format("opentype");
+//     font-family: chakra-petch-bold-italic;
+//     src: url(assets/font/ChakraPetch-BoldItalic.ttf) format("opentype");
+//     font-family: chakra-petch-italic;
+//     src: url(assets/font/ChakraPetch-Italic.ttf) format("opentype");
+//     font-family: chakra-petch-light;
+//     src: url(assets/font/ChakraPetch-Light.ttf) format("opentype");
+//     font-family: chakra-petch-light-italic;
+//     src: url(assets/font/ChakraPetch-LightItalic.ttf) format("opentype");
+
+//     font-family: chakra-petch-regular;
+//     src: url(assets/font/ChakraPetch-Regular.ttf) format("opentype");
+
+//     font-family: chakra-petch-semi-bold;
+//     src: url(assets/font/ChakraPetch-SemiBold.ttf) format("opentype");
+
+//     font-family: chakra-petch-semi-bold-italic;
+//     src: url(assets/font/ChakraPetch-SemiBoldItalic.ttf) format("opentype");
+//   }
