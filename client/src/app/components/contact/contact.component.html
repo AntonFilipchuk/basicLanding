@@ -1,0 +1,101 @@
+<div class="contact-form-container">
+  <h1>Contact us!</h1>
+  <div class="contact-form">
+    <form
+      [formGroup]="contactForm"
+      style="
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <div style="width: 100%">
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1 class="form-name">Name*</h1>
+          <div class="input-form" style="gap: 30px">
+            <div style="width: 100%">
+              <input type="text" formControlName="firstName" />
+            </div>
+            <div style="width: 100%">
+              <input type="text" formControlName="lastName" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1 class="form-name">Email*</h1>
+          <div class="input-form">
+            <input type="email" formControlName="email" />
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1 class="form-name">Phone*</h1>
+          <div class="input-form">
+            <input type="tel" formControlName="phone" />
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1 class="form-name">Plan*</h1>
+          <div class="input-form">
+            <select name="" id="" formControlName="plan">
+              <option>Starter</option>
+              <option>Popular</option>
+              <option>Enterprise</option>
+            </select>
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h1 class="form-name">Message</h1>
+          <div class="input-form">
+            <input type="text" formControlName="message" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button [disabled]="!contactForm.valid">Submit</button>
+</div>
+
+<h1>{{ contactForm.valid }}</h1>
+<p>{{ contactForm.value.firstName }}</p>
+<p>{{ contactForm.value.lastName }}</p>
+<p>{{ contactForm.value.email }}</p>
+<p>{{ contactForm.value.phone }}</p>
+<p>{{ contactForm.value.plan }}</p>
+<p>{{ contactForm.value.message }}</p>

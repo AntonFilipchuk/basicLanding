@@ -4,7 +4,7 @@
 >
   <div
     style="
-      background-color: #243b4a;
+      background-color: #243b4acf;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -12,9 +12,8 @@
     "
   >
     <h1
-      style="margin: 0"
-      [ngClass]="{ show: showText, 'fade-in': true }"
-      #textElement
+      style="margin: 0; color: white; font-size: 3rem; line-height: 1.15"
+      [ngClass]="{ fade: true, show: showText }"
     >
       {{ texts[currentIndex] }}
     </h1>

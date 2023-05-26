@@ -18,7 +18,10 @@ import { QuotesComponent } from './components/quotes/quotes.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { GalleryModule } from  'ng-gallery';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -31,7 +34,8 @@ import { GalleryModule } from  'ng-gallery';
     GalleryComponent,
     WelcomeComponent,
     QuotesComponent,
-    PlansComponent
+    PlansComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { GalleryModule } from  'ng-gallery';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    GalleryModule
+    GalleryModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

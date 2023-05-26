@@ -1,6 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url("/assets/city.png");
+  background-image: url(/assets/city3.png);
 
   /* Set a specific height */
   min-height: 500px;
@@ -12,11 +12,13 @@
   background-size: cover;
 }
 
-.show {
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade.show {
+  transition: opacity 1.2s ease-out;
   opacity: 1;
 }
 
-.fade-in {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
